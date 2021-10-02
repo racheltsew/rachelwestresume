@@ -1,0 +1,3 @@
+.git/*
+.codekit-cache/*
+node_modules/*
