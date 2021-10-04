@@ -1,0 +1,17 @@
+.page-wrapper{
+	margin-top: $spacing-09;
+	margin-left: $spacing-10;
+
+	.bx--col-lg-3, .bx--col-lg-9 {
+		padding-top: $spacing-05;
+	}
+}
+
+.side-panel{
+	background-color: $ui-01;
+}
+
+.security--layout-module--title-bar__label-wrapper h2{
+	@include carbon--type-style ('productive-heading-03');
+	padding-bottom: $spacing-05;
+}

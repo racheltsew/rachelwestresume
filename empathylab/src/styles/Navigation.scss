@@ -2,7 +2,8 @@
 	height: 100%;
 	background-color: #161616;
 	max-width: $spacing-09;
-	margin-top: $spacing-09;
+	position: fixed;
+	top: $spacing-09;
 }
 
 .security--icon-button-bar {
@@ -18,8 +19,12 @@
 	background-color: #4c4c4c;
 }
 
-.security--button--icon:active,
-.security--button--icon:focus {
+.security--button--icon:active {
 	border-left: 4px #0f62fe solid;
 	outline: none;
+}
+
+.link-selected{
+	border-left: 4px #0f62fe solid;
+	background-color: #4c4c4c;
 }
