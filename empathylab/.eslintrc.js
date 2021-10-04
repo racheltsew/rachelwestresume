@@ -62,33 +62,3 @@ module.exports = {
 		],
 	},
 };
-
-
-
-
-
-// {
-// 	"extends": [
-// 		"eslint:recommended",
-// 		"plugin:@typescript-eslint/recommended",
-// 		"plugin:@typescript-eslint/recommended-requiring-type-checking"
-// 	],
-// 	"parser": "@typescript-eslint/parser",
-// 	"parserOptions": {
-// 		"ecmaVersion": "6",
-// 		"project": "${__dirname}/${tsConfig}",
-// 		"tsconfigRootDir": ".",
-// 		"sourceType": "module",
-// 		"ecmaFeatures": {
-// 			"jsx": "true"
-// 		}
-// 	},
-// 	"plugins": ["@typescript-eslint"],
-// 	"rules": {
-// 		"no-use-before-define": "off",
-// 		"@typescript-eslint/indent": ["error", 2],
-// 		"@typescript-eslint/no-unused-vars": "error",
-// 		"@typescript-eslint/no-explicit-any": "error",
-// 		"react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }]
-// 	}
-// }
