@@ -24,7 +24,7 @@ const BuildHeader = (): JSX.Element => {
 			<HeaderContainer
 				render={(): JSX.Element => {
 					return (
-						<Header>
+						<Header aria-label='header'>
 							<HeaderName href='#' prefix='IBM'>
 								Accessibility
 							</HeaderName>
