@@ -7,12 +7,15 @@ const PageStructure = ({ panelContent, panelTitle }: IPageStructureProps): JSX.E
 		<Grid className={'page-wrapper'}>
 			<Row className={'structure-row'}>
 				<Column className={`side-panel`} lg={3} md={2}>
-					<section role='complementary' aria-label={'transform main page settings'}>
+					<section
+						role='complementary'
+						aria-label='transform main page settings'
+						// aria-labelledby={NavAriaLabel}
+					>
 						<TitleBarModule
 							title={panelTitle}
 							element='h2' //is this correct element??
 						/>
-						<p>test text</p>
 						{panelContent}
 					</section>
 				</Column>

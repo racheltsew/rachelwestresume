@@ -1,3 +1,4 @@
+import LandingContent from 'components/Landing';
 import Navigation from './components/Navigation';
 import PageStructure from 'components/PageStructure';
 import React from 'react';
@@ -13,7 +14,7 @@ function App(): JSX.Element {
 			case ENavigationItems.LANDING:
 				return {
 					panelTitle: 'Welcome to the IBM Accessibility Checker Experience Site!',
-					panelContent: <>Import then insert Landing Component Here</>,
+					panelContent: <LandingContent />,
 				};
 			case ENavigationItems.ACCESSIBILITY_CHECKER:
 				return {
