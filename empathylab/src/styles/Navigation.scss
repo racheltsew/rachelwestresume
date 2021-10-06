@@ -1,6 +1,6 @@
 .icon-button-bar-container {
 	height: 100%;
-	background-color: #161616;
+	background-color: $ui-05;
 	max-width: $spacing-09;
 	position: fixed;
 	top: $spacing-09;
@@ -11,20 +11,28 @@
 }
 
 .security--button--icon {
-	color: #fff;
+	color: $icon-03;
 }
 
 .security--button--icon:hover,
 .security--button--icon:focus {
-	background-color: #4c4c4c;
+	background-color: $hover-secondary;
 }
 
 .security--button--icon:active {
-	border-left: 4px #0f62fe solid;
+	border-left: 4px $focus solid;
 	outline: none;
 }
 
-.link-selected{
-	border-left: 4px #0f62fe solid;
-	background-color: #4c4c4c;
+.link-selected {
+	border-left: 4px $focus solid;
+	background-color: $ui-01;
+	color: $icon-01;
+}
+
+.link-selected:hover,
+.link-selected:focus {
+	background-color: $hover-secondary;
+	border: none;
+	color: $icon-03;
 }

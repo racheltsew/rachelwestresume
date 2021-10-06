@@ -41,7 +41,7 @@ const Navigation = ({ selectedPage, setSelectedPage }: INavigationProps): JSX.El
 
 	const BuildSideNav = (): JSX.Element => {
 		return (
-			<nav className='icon-button-bar-container'>
+			<nav className='icon-button-bar-container' aria-label='main'>
 				<IconButtonBar
 					actions={navigationActions()}
 					className='sidebar-icons'

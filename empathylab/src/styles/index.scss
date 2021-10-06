@@ -86,6 +86,8 @@ $css--disable-css-custom-properties: false !default;
 // carbon-security styles
 @import "~@carbon/ibm-security/scss/components/IconButton/index";
 @import "~@carbon/ibm-security/scss/components/IconButtonBar/index";
+@import "~@carbon/ibm-security/scss/components/LayoutModules/DescriptionModule/index";
+@import "~@carbon/ibm-security/scss/components/LayoutModules/TitleBarModule/index";
 
 // custom styles
 @import "./Common.scss";
