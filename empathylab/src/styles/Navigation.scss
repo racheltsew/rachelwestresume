@@ -32,7 +32,5 @@
 
 .link-selected:hover,
 .link-selected:focus {
-	background-color: $hover-secondary;
-	border: none;
-	color: $icon-03;
+	background-color: $hover-selected-ui;
 }
