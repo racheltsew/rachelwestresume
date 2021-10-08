@@ -1,0 +1,95 @@
+//-------------------------
+// 🌍 Global
+//-------------------------
+
+/// If true, includes font face mixins in `_css--font-face.scss` depending on the `css--plex` feature flag
+/// @access public
+/// @type Bool
+/// @group feature-flags
+$css--font-face: true !default;
+
+/// If true, includes the `css-helpers()` mixin
+/// @access public
+/// @type Bool
+/// @group feature-flags
+$css--helpers: true !default;
+
+/// If true, includes the `css-body()` mixin
+/// @access public
+/// @type Bool
+/// @group feature-flags
+$css--body: true !default;
+
+/// If true, include reset CSS
+/// @access public
+/// @type Bool
+/// @group feature-flags
+$css--reset: true !default;
+
+/// If true, include default type
+/// @access public
+/// @type Bool
+/// @group feature-flags
+$css--default-type: true !default;
+
+/// Used with `css--font-face` feature flag, if true, uses Plex font families instead of Helvetica
+/// @access public
+/// @type Bool
+/// @group feature-flags
+$css--plex: true !default;
+
+/// This feature flag was used during development of the v10 experimental grid.
+/// TODO: remove in next major release. Synced in `feature-flags` as an adapter in the interim
+/// @deprecated (For v10) v10 always uses `@carbon/grid`
+/// @access public
+/// @type Bool
+/// @group feature-flags
+$css--use-experimental-grid: false !default;
+
+/// This feature flag was used during development of the v10 experimental grid.
+/// TODO: remove in next major release. Synced in `feature-flags` as an adapter in the interim.
+/// @access public
+/// @type Bool
+/// @group feature-flags
+/// @deprecated (For v10) v10 always uses `@carbon/grid`
+$css--use-experimental-grid-fallback: false !default;
+
+/// If `enable-v11-release` is set to `true`, it automatically enables the custom properties flag.
+/// If so, we need a way to disable custom properties, but use the new tokens.
+/// @access public
+/// @type Bool
+/// @group feature-flags
+$css--disable-css-custom-properties: false !default;
+
+// carbon-component globals
+@import "~carbon-components/scss/globals/scss/_feature-flags";
+@import "~carbon-components/scss/globals/scss/_vars";
+@import "~carbon-components/scss/globals/scss/_colors";
+@import "~carbon-components/scss/globals/scss/_theme";
+@import "~carbon-components/scss/globals/scss/_mixins";
+@import "~carbon-components/scss/globals/scss/_layout";
+@import "~carbon-components/scss/globals/scss/_layer";
+@import "~carbon-components/scss/globals/scss/_spacing";
+@import "~carbon-components/scss/globals/scss/_typography";
+@import "~carbon-components/scss/globals/scss/vendor/@carbon/elements/scss/import-once/import-once.scss";
+@import "~carbon-components/scss/globals/scss/_css--reset";
+@import "~carbon-components/scss/globals/scss/_css--font-face";
+@import "~carbon-components/scss/globals/scss/_css--helpers";
+@import "~carbon-components/scss/globals/scss/_css--body";
+@import "~carbon-components/scss/globals/grid/_grid";
+
+// **** please keep in alphabetical order **** //
+
+// carbon-component componets styles
+@import "~carbon-components/scss/components/ui-shell/ui-shell";
+
+// carbon-security styles
+@import "~@carbon/ibm-security/scss/components/IconButton/index";
+@import "~@carbon/ibm-security/scss/components/IconButtonBar/index";
+@import "~@carbon/ibm-security/scss/components/LayoutModules/DescriptionModule/index";
+@import "~@carbon/ibm-security/scss/components/LayoutModules/TitleBarModule/index";
+
+// custom styles
+@import "./Common.scss";
+@import "./Navigation.scss";
+@import "./PageStructure.scss";
