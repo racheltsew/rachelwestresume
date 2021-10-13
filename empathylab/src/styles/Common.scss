@@ -1,3 +1,45 @@
 .body-long-02 {
-	@include carbon--type-style ('body-long-02');
+	@include carbon--type-style('body-long-02');
+}
+
+// override for full width accordion in side panel
+.bx--accordion {
+	margin-left: calc($spacing-05 * -1);
+	width: calc(100% + $spacing-07);
+}
+
+.bx--accordion__item--active .bx--accordion__content {
+	padding-top: $spacing-05;
+}
+
+// override white background on selected accordion item & remove bold title
+.bx--accordion__item--active {
+	.bx--accordion__heading {
+		background-color: $ui-02;
+	}
+
+	.bx--accordion__title {
+		font-weight: 400;
+	}
+}
+
+.bx--accordion__title {
+	font-size: $spacing-05;
+}
+
+.issues-heading {
+	@include carbon--type-style('productive-heading-03');
+}
+
+.issue-set {
+	padding-bottom: $spacing-05;
+}
+
+.issue-set .issue-subheading {
+	@include carbon--type-style('productive-heading-01');
+	padding-bottom: $spacing-04;
+}
+
+.issue-set .issue-subdescription {
+	@include carbon--type-style('body-long-01');
 }

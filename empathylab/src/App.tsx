@@ -4,6 +4,7 @@ import PageStructure from 'components/PageStructure';
 import React from 'react';
 import { defaultAltoro, ENavigationItems, IAltoroProps, IPageStructureProps } from './utilities';
 import './styles/index.scss';
+import KeyboardContent from 'components/KeyboardContent';
 
 function App(): JSX.Element {
 	const [selectedPage, setSelectedPage] = React.useState<string>(ENavigationItems.LANDING);
@@ -39,7 +40,7 @@ function App(): JSX.Element {
 				return {
 					altoroProps: altoroSettings,
 					panelTitle: 'Keyboard navigation view',
-					panelContent: <>Import then insert keyboard navigation Component Here</>,
+					panelContent: <KeyboardContent />,
 				};
 			case ENavigationItems.SCREEN_READER:
 				return {

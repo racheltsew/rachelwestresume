@@ -30,4 +30,10 @@ interface IAltoroProps {
 	};
 }
 
+export interface IAccordionItem {
+	title: string;
+	content: JSX.Element;
+	key: string;
+}
+
 export type { IPageStructureProps, IAltoroProps };

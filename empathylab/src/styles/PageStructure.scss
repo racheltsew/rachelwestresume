@@ -1,25 +1,28 @@
-.page-wrapper{
+.page-wrapper {
 	margin-top: $spacing-09;
 	margin-left: $spacing-07;
+	padding-left: 2rem;
+	padding-right: 2rem;
 
-	.bx--col-lg-3, .bx--col-lg-9 {
+	.bx--col-lg-3,
+	.bx--col-lg-9 {
 		padding-top: $spacing-05;
 	}
 }
 
-.side-panel{
+.side-panel {
 	background-color: $ui-01;
 	padding-bottom: $spacing-09;
 }
 
-.security--layout-module--title-bar__label-wrapper h2{
-	@include carbon--type-style ('productive-heading-03');
+.security--layout-module--title-bar__label-wrapper h2 {
+	@include carbon--type-style('productive-heading-03');
 	padding-bottom: $spacing-05;
 }
 
 .landing-icon {
 	margin: $spacing-03;
 }
-.landing-section:last-of-type{
+.landing-section:last-of-type {
 	margin-top: $spacing-05;
 }
